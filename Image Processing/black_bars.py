@@ -3,7 +3,7 @@ import cv2
 image = cv2.imread(r'C:\Users\ahmed\Desktop\Capstone\image tests\image test 4\frame84.jpg')#, cv2.IMREAD_GRAYSCALE)
 image = image[0:224, 128:352]
 
-#upper rectangles
+#upper rectangle
 image = cv2.rectangle(image, (0,0), (224,45), (0,0,0), -1)
 
 #diagonal boundry lines
