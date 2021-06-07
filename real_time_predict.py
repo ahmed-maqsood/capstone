@@ -137,6 +137,9 @@ def printer_stuff(flowrate, max_flowrate, min_flowrate, class_number, likelihood
     else:
         print('No pattern')
 
+    #return the new flowrate
+    return flowrate
+
 def main():
     #loads CNN model
     model = load_model()
@@ -170,7 +173,7 @@ def main():
         img_num = img_num + 1
 
         #!!!!!!SHAWN!!!!!! i made a function for ur stuff to make code neater
-        printer_stuff(flowrate, max_flowrate, min_flowrate, class_number, likelihood)
+        flowrate = printer_stuff(flowrate, max_flowrate, min_flowrate, class_number, likelihood)
 
 
 if __name__ == "__main__":
