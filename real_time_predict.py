@@ -172,7 +172,7 @@ def main():
         #update img_num to keep track of snapshot#
         img_num = img_num + 1
 
-        #!!!!!!SHAWN!!!!!! i made a function for ur stuff to make code neater
+        #adjust flowrate
         flowrate = printer_stuff(flowrate, max_flowrate, min_flowrate, class_number, likelihood)
 
 
